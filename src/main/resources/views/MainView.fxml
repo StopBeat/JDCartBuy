@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.jdcartbuy.controller.MainController"
+            prefWidth="1200.0" prefHeight="550.0">
+    <children>
+        <Label  fx:id="ckLabel" layoutX="50" layoutY="50" text="cookie"></Label>
+    </children>
+    <children>
+        <TextField  fx:id="ckInput" layoutX="100" layoutY="50"></TextField>
+    </children>
+    <children>
+        <Button fx:id="login" layoutX="300" layoutY="50" text="登录"></Button>
+    </children>
+
+    <children>
+        <TextArea fx:id="target" layoutX="100" layoutY="150"></TextArea>
+    </children>
+
+    <children>
+        <Label  fx:id="targetLabel" layoutX="100" layoutY="100" prefWidth="600" text="以'skuid|数量'方式为一组用','分开为一组监控单位，换行为换组"></Label>
+    </children>
+    <children>
+        <Button fx:id="targetConfirm" layoutX="500" layoutY="350" text="确认监控目标"></Button>
+    </children>
+
+    <children>
+        <Button fx:id="cartClearRemove" layoutX="100" layoutY="350" text="清空购物车"></Button>
+    </children>
+
+    <children>
+        <Button fx:id="getCartInfo" layoutX="200" layoutY="350" text="获取购物车信息"></Button>
+    </children>
+
+    <children>
+        <Button fx:id="startMonitor" layoutX="500" layoutY="400" text="开始监控"></Button>
+    </children>
+    <children>
+        <Button fx:id="endMonitor" layoutX="200" layoutY="400" text="关闭监控"></Button>
+    </children>
+
+    <children>
+        <Button fx:id="cleanLogger" layoutX="650" layoutY="20" text="清空日志"></Button>
+    </children>
+    <children>
+        <TextArea fx:id="logger" layoutX="650" layoutY="50" prefHeight="450" ></TextArea>
+    </children>
+
+    <children>
+        <Label  fx:id="pushLabel" layoutX="50" layoutY="450" text="微信推送URL" prefWidth="150"></Label>
+    </children>
+    <children>
+        <TextField  fx:id="pushInput" layoutX="150" layoutY="450"></TextField>
+    </children>
+    <children>
+        <Button fx:id="push" layoutX="400" layoutY="450" text="绑定推送"></Button>
+    </children>
+</AnchorPane>
